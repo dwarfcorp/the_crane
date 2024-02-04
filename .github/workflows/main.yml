@@ -2,6 +2,7 @@
 # Your GitHub Actions workflow file here
 name: Deploy App to Firebase Hosting
 on:
+  workflow_dispatch:
   push:
     branches:
       - main

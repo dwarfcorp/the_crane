@@ -36,8 +36,9 @@ class HomePage extends StatelessWidget {
                 width: 250,
                 child: SvgPicture.asset(
                   '../assets/logo.svg',
-                  height: 150,
-                  width: 150,
+                  height: 85,
+                  width: 85,
+                  fit: BoxFit.fitWidth,
                 )),
             actions: [
               Container(

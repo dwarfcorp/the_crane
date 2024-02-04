@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858453983778",
+    "project_id": "the-crane-e2ff1",
+    "storage_bucket": "the-crane-e2ff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858453983778:android:e0dbe6ea1e4d1e974e807b",
+        "android_client_info": {
+          "package_name": "com.example.the_crane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp-3Xs6_D49hZCCJLLAjCn0CQd-zDdJWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

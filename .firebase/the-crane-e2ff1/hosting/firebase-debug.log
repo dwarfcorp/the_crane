@@ -1,0 +1,30 @@
+[debug] [2024-02-04T03:39:03.359Z] ----------------------------------------------------------------------
+[debug] [2024-02-04T03:39:03.364Z] Command:       /opt/homebrew/Cellar/node/21.6.1/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-02-04T03:39:03.364Z] CLI Version:   13.1.0
+[debug] [2024-02-04T03:39:03.364Z] Platform:      darwin
+[debug] [2024-02-04T03:39:03.364Z] Node Version:  v21.6.1
+[debug] [2024-02-04T03:39:03.364Z] Time:          Sat Feb 03 2024 22:39:03 GMT-0500 (GMT-05:00)
+[debug] [2024-02-04T03:39:03.364Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-04T03:39:03.398Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-04T03:39:03.398Z] > authorizing via signed-in user (sebastian.yepes@dwarfcorp.org)
+[debug] [2024-02-04T03:39:03.398Z] [iam] checking project the-crane-e2ff1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-04T03:39:03.399Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-crane-e2ff1:testIamPermissions [none]
+[debug] [2024-02-04T03:39:03.399Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-crane-e2ff1:testIamPermissions x-goog-quota-user=projects/the-crane-e2ff1
+[debug] [2024-02-04T03:39:03.399Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-crane-e2ff1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-04T03:39:04.053Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-crane-e2ff1:testIamPermissions 200
+[debug] [2024-02-04T03:39:04.053Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-crane-e2ff1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-04T03:39:04.054Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-crane-e2ff1 [none]
+[debug] [2024-02-04T03:39:04.376Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-crane-e2ff1 200
+[debug] [2024-02-04T03:39:04.377Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-crane-e2ff1 {"projectId":"the-crane-e2ff1","projectNumber":"858453983778","displayName":"the-crane","name":"projects/the-crane-e2ff1","resources":{"hostingSite":"the-crane-e2ff1"},"state":"ACTIVE","etag":"1_861e4ab1-b5a5-4700-8de4-5ab28fc8f8af"}
+[info] 
+   Thank you for trying our experimental support for Flutter Web on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+

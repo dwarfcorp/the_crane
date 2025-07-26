@@ -27,6 +27,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    print(width);
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Scaffold(
@@ -35,28 +37,28 @@ class HomePage extends StatelessWidget {
                 alignment: Alignment.center,
                 width: 250,
                 child: SvgPicture.asset(
-                  '../assets/logo.svg',
+                  'assets/logo.svg',
                   height: 85,
                   width: 85,
                   fit: BoxFit.fitWidth,
                 )),
             actions: [
               Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                      onPressed: () {}, child: Text("Servicios"))),
+                      onPressed: () {}, child: const Text("Servicios"))),
               Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                      onPressed: () {}, child: Text("Nuestro trabajo"))),
+                      onPressed: () {}, child: const Text("Nuestro trabajo"))),
               Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                      onPressed: () {}, child: Text("Registrarse"))),
+                      onPressed: () {}, child: const Text("Registrarse"))),
               Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ElevatedButton(
-                      onPressed: () {}, child: Text("Iniciar sesion"))),
+                      onPressed: () {}, child: const Text("Iniciar sesion"))),
             ],
           ),
           body: ListView(
@@ -67,9 +69,10 @@ class HomePage extends StatelessWidget {
                     flex: 1,
                     child: Column(
                       children: [
-                        Text("¿Nos necesitas?"),
-                        Text("No importa hora, lugar o clima; ¡Ahi estaremos!"),
-                        SizedBox(
+                        const Text("¿Nos necesitas?"),
+                        const Text(
+                            "No importa hora, lugar o clima; ¡Ahi estaremos!"),
+                        const SizedBox(
                           height: 50,
                         ),
                         Row(
@@ -77,12 +80,12 @@ class HomePage extends StatelessWidget {
                           children: [
                             ElevatedButton(
                               onPressed: (() {}),
-                              child: Text("Contactanos por wpp"),
+                              child: const Text("Contactanos por wpp"),
                             ),
                             ElevatedButton(
                               onPressed: (() {}),
                               child: Container(
-                                child: Text("Solicitar un servicio"),
+                                child: const Text("Solicitar un servicio"),
                               ),
                             ),
                           ],
@@ -91,7 +94,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                      flex: 1, child: Lottie.asset('../assets/lottie.json')),
+                      flex: 1,
+                      child: Lottie.asset('assets/lottie.json',
+                          frameRate: FrameRate.max)),
                 ],
               ),
               Container(height: 400, color: Colors.purple),
